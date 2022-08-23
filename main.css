@@ -1,0 +1,171 @@
+.form-controll{
+    display: flex;
+    padding-left: 33%;
+   
+}
+body{
+    background-image:url(./img/Tong-hop-cac-hinh-anh-background-dep-nhat-21.jpg);  
+    width: 100%;
+}
+h1{
+    text-align: center;
+    color: rgb(240, 232, 232);
+    padding-bottom: 30px 0 40px 0;
+    font-size: 50px;
+}
+
+.content{
+    border-radius: 10px;
+    padding: 5px;
+    width: 500px;
+    height: 45px;
+    resize: none;
+    text-align: center;
+    font-size: 20px;
+}
+.form-controll button{
+    height: 57px;
+    line-height: 45px;
+    border: none;
+    padding: 10px;
+    background-color: blue;
+    border-radius: 20px;
+    width: 80px;
+    margin-left: 10px;
+    font-size: 15px;
+}
+button:hover{
+    background-color: aqua;
+}
+button:active{
+    background-color: blueviolet;
+}
+#list-task h4{
+    color: antiquewhite;
+    font-size: 30px;
+    text-align: center;
+}
+#list-task p{
+    color: rgb(42, 221, 72);
+    font-size: 20px;
+    text-align: center;
+}
+#list-task ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+
+}
+#list-task ul li{
+    display: flex;
+    background-color: rgb(202, 202, 232);
+    width: 470px;
+    padding: 5px;
+    margin-bottom: 5px;
+    margin-left: 35%;
+    
+}
+#list-task ul li div{
+    width: 80%;
+    
+    height: 30px;
+    text-align: center;
+   
+}
+
+#list-task ul li a{
+    text-decoration: none;
+    color: aqua;
+    margin-left: 15px;
+    display: block;
+}
+
+#list-task ul li a:nth-last-of-type(1){
+    color: red;
+    border-radius: 5px;
+    font-size: 20px;
+    
+    
+}
+#list-task ul li a:nth-last-of-type(2){
+    color: green;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+
+.task-name{
+    color: rgb(19, 46, 46);
+    font-size: 20px;
+}
+
+.form-message{
+    color: red;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+
+
+#toast{
+    position: fixed;
+    top: 50%;
+    right: 25px;
+}
+.toast{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 2px;
+    padding: 15px 0px;
+    border-left: 6px solid;
+    max-width: 270px;
+    min-width: 150px;
+    box-shadow: 9px 9px 7px -2px #000000; 
+    transform: 125%;
+    animation: slideInLeft ease .3s, fadeOut linear 1s 2s forwards;
+}
+.toast+.toast{
+    margin-top: 25px;
+}
+
+.toast--success .toast__icon{
+    font-size: 20px;
+    color: green;
+    padding: 0 20px;
+}
+.toast--error .toast__icon{
+    font-size: 20px;
+    color: red;
+    padding: 0 20px;
+}
+.toast__close{
+    font-size: 20px;
+    color: red;
+    padding: 0 20px;
+    margin-right: 10px ;
+}
+
+.toast--success{
+    border-color: green;
+}
+.toast--error{
+    border-color: red;
+}
+
+@keyframes slideInLeft{
+    from{
+        transform: translateX(calc(100% + 50px));
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeOut{
+    to{
+        opacity: 0;
+    }
+}
+
+
